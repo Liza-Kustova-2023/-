@@ -1,0 +1,252 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat+Brush&family=Montserrat+Alternates:ital,wght@0,300;0,500;0,700;0,800;1,300&display=swap');
+:root {
+    font-size: 16 px;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-pink: #F3A2B1;
+    --color-gray: #EDE9E9;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+u1, p, h1, h2, h3, figure, figcaption {
+    margin: 0;
+    padding:0;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear:both;
+}
+
+/* общие стили */
+.container{
+    padding: 0px 74.21px;
+}
+.logo{
+    margin:0;
+    padding: 0;
+}
+.main-section{
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-gray);
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+}
+/* надписи */
+.logo-text{
+    margin-top: 127.52px;
+}
+.promo-title-1 {
+    font-family: 'Amatic SC';
+    font-size: 6rem;
+    font-weight:bold;
+    letter-spacing: 1rem;
+    font-style: normal;
+    color: var(--color-black);
+    margin-top: -27px;
+    width: 344px;
+    height: 114px;
+}
+.promo-tile-2 {
+    font-size: 2rem;
+    font-style:italic;
+    color:var(--color-gary-pink);
+    width: 359px;
+    height: 76px;
+    margin-top: 0px;
+}
+.promo-tile-2 p{
+    width: 359px;
+    height: 25px;
+}
+.promo-tile-4 {
+    margin-top: 14px;
+}
+.ikons{
+    width: 413.66px;
+    height: 71.64px;
+    margin-top: 32.74px;
+}
+.ikons img{
+    padding-right: 34.8px;
+}
+
+.logo .podpis{
+    font-size: 0.9375rem;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+    color:var(--color-gary-pink);
+}
+/* меню */
+.main-menu{
+    text-align: center;
+}
+.main-menu li {
+    display: inline-block;
+    padding-top: 16px;
+    padding-left: 35.32px;
+    font-family: Montserrat light;
+    
+}
+.main-menu li a {
+    cursor: pointer;
+    line-height: 1;
+    border-radius: 3px;
+    overflow: hidden;
+    background: linear-gradient(to right,#F3A2B1, #F3A2B1 50%, rgb(0, 0, 0) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 400ms ease;
+}
+.main-menu li a:after{
+    color: var(--color-white);
+    background-color: var(--color-pink);
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.main-menu li a:hover:after,
+.main-menu li a:focus,
+.main-menu li a:active,
+.main-menu li a:hover{
+    width: 100%;
+    font-weight: 900;
+    background-position: 0 100%;
+}
+.main-menu li a:focus,
+.main-menu li a:active{
+    border-bottom: 3px solid var(--color-pink);
+    font-weight: 900;
+    padding-bottom: 3px;
+    border-radius: 3px;
+}
+/* телефон */
+.contacts {
+    padding-top: 16px;
+}
+.contacts a {
+    color: var(--color-black);
+    font-family: Montserrat light;
+    overflow: hidden;
+    background: linear-gradient(to right, #F3A2B1,#F3A2B1 50%, rgb(0, 0, 0) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 400ms ease;
+}
+.contacts a:hover {
+    background-position: 0 100%;
+    font-weight: 900;
+}
+/* кнопки */
+/* кнопка на главной странице */
+.button{
+    font-size: 32px;
+    border-radius:60px;
+    color:var(--color-pink);
+    font-weight: 900;
+    box-shadow:0px 0px 4.8px 0px var(--color-pink);
+    color:var(--color-pink);
+    background: none;
+    border: 0.3rem solid var(--color-pink);
+    padding: 12px 76px;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+.arrow{
+    width: 350px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button:hover{
+    color: var(--color-white);
+}
+.button::before{
+    content:"";
+    display:block;
+    background:var(--color-pink);
+}
+.arrow::before{
+    width:0;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    transition:0.4s;
+    border-radius:60px;
+}
+.arrow:hover::before{
+    width: 100%;
+}
+/* кнопки */
+/* кнопка 1 */
+.button-1{
+    margin-top: 16.74px;
+    width: 506px;
+    height: 80px;
+    display: inline-block;
+}
+.podpis{
+    width: 142px;
+    height: 80px;
+    margin-top: -86px;
+    margin-left: 373px;
+}
+
+/* лапа и собаки */
+.laps{
+    margin-left: 128.74px;
+    width: 47.39px;
+    height: 38.51px;
+}
+.promo-dogs-1{
+    width: 75.65px;
+    height: 74.6px;
+    margin-top: 112.52px;
+    margin-left: 575px;
+}
+.kartina img{
+    max-width: 1338px;
+   margin-top: auto;
+   height: 960.79px;
+}
+.main-section{
+    overflow: hidden;
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+    background:604px 17.52px url(/img/картинка.png)no-repeat;
+    background-size:1338.96px 960.79px;
+    }
+
